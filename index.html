@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-sdsdfdsfsdfsdf
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+<div class="menu" id="sweets-menu2"></div>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>0</li>
+</ul>
+
+<script type="text/template" id="menu-template">
+
+  <span class="menu__title"><%- title %></span>
+  <ul class="menu__list">
+    <% items.forEach(function(item) { %>
+      <li><%- item %></li>
+    <% }); %>
+  </ul>
+
+</script>
+
+
+
 </body>
+
 </html>

@@ -1,0 +1,17 @@
+.menu {
+  border: 1px solid black;
+}
+
+.menu_closed .menu__list {
+  display: none;
+}
+
+.menu__title {
+  cursor: pointer;
+}
+
+.menu_sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
